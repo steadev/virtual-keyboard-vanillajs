@@ -183,7 +183,7 @@ const Keyboard = {
     if (this.properties.eng) {
       for (const key of this.elements.keys) {
         if (key.childElementCount === 0) {
-          key.textContent = keyLayoutKor[key.textContent];
+          key.textContent = keyLayoutKor[key.textContent.toLowerCase()];
         }
       }
     } else {
